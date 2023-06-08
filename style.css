@@ -1,0 +1,91 @@
+ html {
+   height: 100%;
+   width: 100%;
+   background-color: #ffe380;
+ }
+
+ .main {
+   border: 2px solid red;
+   width: 100%;
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #c2e561;
+ }
+
+ .container {
+   border: 2px solid black;
+   height: 400px;
+   width: 40%;
+   margin: 10%;
+   background-color: #f8f8c4;
+ }
+
+ .box {
+   display: block;
+   margin: 0 auto;
+   width: 20%;
+   height: 10%;
+   background-color: black;
+   color: white;
+   /* border: 2px solid black; */
+ }
+
+ .btn {
+   display: block;
+   width: 20%;
+   height: 10%;
+   margin: 4px auto;
+   background-color: purple;
+   color: white;
+ }
+
+ #heading {
+   text-align: center;
+ }
+
+ #ask {
+   text-align: center;
+ }
+
+ .response {
+   border: 2px solid red;
+   text-align: center;
+ }
+
+ .count {
+   border: 2px solid blue;
+   text-align: center;
+ }
+
+ .guessNumber {
+   border: 2px solid yellow;
+   text-align: center;
+ }
+
+ .score {
+   border: 2px solid green;
+   text-align: center;
+ }
+
+ .controler {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .Instruction {
+   color: red;
+   display: block;
+ }
+
+ .Start {
+   display: inline;
+   border: 2px solid red;
+   /* position: absolute;
+   bottom: 10%; */
+   background-color: grey;
+   color: yellow;
+ }
