@@ -1,6 +1,5 @@
-//Generate Number 1-100;
 document.querySelector(".Start").addEventListener("click", function() {
-  document.getElementsByClassName("Instruction")[0].innerHTML = "The Number has been generated";
+  document.getElementsByClassName("instruction")[0].innerHTML = "The Number has been generated";
 
   let num = Math.floor(Math.random() * 100) + 1;
   let noOfguess = 0;

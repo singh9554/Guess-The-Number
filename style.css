@@ -1,91 +1,113 @@
- html {
-   height: 100%;
-   width: 100%;
-   background-color: #ffe380;
- }
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+}
 
- .main {
-   border: 2px solid red;
-   width: 100%;
-   height: 70%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-color: #c2e561;
- }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
- .container {
-   border: 2px solid black;
-   height: 400px;
-   width: 40%;
-   margin: 10%;
-   background-color: #f8f8c4;
- }
+.container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
- .box {
-   display: block;
-   margin: 0 auto;
-   width: 20%;
-   height: 10%;
-   background-color: black;
-   color: white;
-   /* border: 2px solid black; */
- }
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+}
 
- .btn {
-   display: block;
-   width: 20%;
-   height: 10%;
-   margin: 4px auto;
-   background-color: purple;
-   color: white;
- }
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
 
- #heading {
-   text-align: center;
- }
+input:focus {
+  outline: none;
+  border-color: #6200ee;
+}
 
- #ask {
-   text-align: center;
- }
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6200ee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
- .response {
-   border: 2px solid red;
-   text-align: center;
- }
+button:hover {
+  background-color: #5200d8;
+}
 
- .count {
-   border: 2px solid blue;
-   text-align: center;
- }
+p.response {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  animation: fade-in 1s ease;
+}
 
- .guessNumber {
-   border: 2px solid yellow;
-   text-align: center;
- }
+h4.count,
+h5.guessNumber,
+h3.score {
+  text-align: center;
+  color: #333;
+}
 
- .score {
-   border: 2px solid green;
-   text-align: center;
- }
+.controler {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
- .controler {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
+.Start {
+  padding: 10px 20px;
+  background-color: #6200ee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
- .Instruction {
-   color: red;
-   display: block;
- }
+.Start:hover {
+  background-color: #5200d8;
+}
 
- .Start {
-   display: inline;
-   border: 2px solid red;
-   /* position: absolute;
-   bottom: 10%; */
-   background-color: grey;
-   color: yellow;
- }
+.Instruction {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff0000;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
